@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cont(pal, letra) {
+        let contador = 0;
+
+        pal = pal.toLowerCase();
+        letra = letra.toLowerCase();
+
+        for (let i = 0; i < pal.length; i++) {
+            if (pal[i] === letra) {
+                contador++;
+        }
+    }
+
+        return contador;
+}
+
+        let pal = "programação";
+        let letra = "a";
+        alert(`A letra "${letra}" aparece ${cont(pal, letra)} vez(es) na palavra "${pal}".`);
+    </script>
+</body>
+</html>
